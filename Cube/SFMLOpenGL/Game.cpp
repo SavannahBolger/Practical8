@@ -1,18 +1,14 @@
-#include <Game.h>
-
-bool flip = false;
-int current = 1;
+#include "Game.h"
 
 Game::Game() : window(VideoMode(800, 600), "OpenGL Cube")
 {
-
 }
 
 Game::~Game() {}
 
-float vertices[] = { 1.0f, 1.0f, -5.0f, -1.0f, 1.0f, -5.0f, -1.0f, -1.0f, -5.0f };
-float colors[] = { 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f };
-unsigned int vertex_index[] = { 0, 1, 2 };
+float vertices[] = { 1.0f, 1.0f, -5.0f, -1.0f, 1.0f, -5.0f, -1.0f, -1.0f, -5.0f, 1.0f, 1.0f, -5.0f };
+float colors[] = { 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 1.0f };
+unsigned int vertex_index[] = { 0, 1, 2, 3 };
 
 void Game::run()
 {

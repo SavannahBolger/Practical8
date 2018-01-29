@@ -4,12 +4,12 @@
 #include <gl/GL.h>
 #include <gl/GLU.h>
 
-#include <Vector3.h>
-#include <Matrix3.h>
+#include "Vector3D.h"
+#include "Matrix3.h"
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
+//using namespace gpp;
 
 class Game
 {
@@ -27,6 +27,8 @@ private:
 
 	Clock clock;
 	Time elapsed;
+	bool flip = false;
+	int current = 1;
 
 	float rotationAngle = 0.0f;
 };
